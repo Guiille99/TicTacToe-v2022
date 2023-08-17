@@ -1,0 +1,185 @@
+/* 
+    Created on : 22 may. 2022, 11:32:21
+    Author     : Guillermo Jarana
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif; 
+}
+body{
+    background: #2C3E50; 
+}
+/*CONTENEDOR*/
+#contenedor{       
+    width: 100%;
+    padding-top: 94px;
+    /*COLOR HOVER CABECERA #46c9b0*/
+}
+a{
+    text-decoration: none;
+}
+/*CABECERA*/
+header{
+    position: fixed;
+    background: #17212b; 
+    height: 94px;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 0px 20px 0px black;
+}
+#cabecera-contenedor{
+    position: relative;               
+    height: 100%;
+    margin-left: 100px;
+}
+#container-logo{
+    height: 100%;
+    display: inline-block;
+}
+header #logo{
+    height: 70%;
+    float: left;
+    position: absolute;
+    top: 12%;
+}
+header ul, header #sesion{
+    display: flex;
+    /*display: inline-block;*/
+}
+#menuNavegacion{
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    margin-left: 10%;
+    /*width: 100%;*/
+
+}
+#menuNavegacion ul{
+    display: flex;
+    font-size: 0.8em;
+}
+#menuNavegacion a{
+    color: white;
+}
+#menuNavegacion ul li{
+    /*display: inline-block;*/
+    list-style: none;
+    margin-right: 20px;
+    padding: 10px 14px;
+    font-weight: bold;
+
+}
+#menuNavegacion li:hover{
+    background: #46c9b0;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 4px 1px 20px 0px black;
+}
+#sesion{
+    margin-left: 500px;
+}
+/*CONTENEDOR CENTRAL*/
+#contenedor-central{
+    padding-top: 5%;
+    text-align: center;
+}
+/*Contenedor registro*/
+#contenedor-registro{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+#registro{
+    margin-top: 4%;
+}
+/*Logo*/
+#logo-registro img{
+    height: 150px;
+}
+#tituloRegistro h2{
+    display: inline-block;
+    color: white;
+    margin-bottom: 2%;
+    border-bottom: 2px solid #46c9b0;
+}
+/*Formulario de registro*/
+#nombre,#apellidos,#nombreUsuario,#pass{
+    width: 35%;
+    margin-bottom: 1%;
+    padding: 5px;
+}
+#BtnRegistro{
+    background:#46c9b0;
+    font-size: 1.5em;
+    padding: 20px;
+    border-radius: 10px;
+}
+#BtnRegistro:hover{
+    background: #359381;
+    color: white;
+}
+/*PIE*/
+footer{
+    background: #17212b;
+    /*display: flex;*/
+    color: white;
+    overflow: hidden;
+    /* justify-content: center;*/
+}
+footer li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+footer a{
+    color: white;
+}
+#info img{
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    padding: 1%;
+    margin-right: 2%;
+}
+#info img:hover{
+    background: #46c9b0;
+}
+
+footer h5{
+    display: inline-block;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #46c9b0
+}
+/*INFO*/
+#info{
+    display: flex;
+    justify-content: center;
+}
+/*RRSS*/
+#RRSS, #contacto-container{
+    margin: 2% 0%;
+    display: inline-block;
+    width: 28%;
+}
+#contacto-container img{
+    background: none;
+    border-radius: 0px;
+    padding: 0%;
+}
+/*Copyright*/
+#contenedor-copyright{
+    background: black;
+    width: 100%;
+    font-size: small;
+    padding: 5px;
+    text-align: center;
+}
+#contenedor-copyright p{
+    display: inline-block;
+}
+#contenedor-copyright img{
+    height: 15px;
+    margin-right: 3px;
+}
+
+

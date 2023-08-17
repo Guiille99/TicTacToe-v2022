@@ -1,0 +1,222 @@
+/* 
+    Created on : 15 may. 2022, 11:51:20
+    Author     : Guillermo Jarana
+*/
+            *{
+                margin: 0;
+                padding: 0;
+                font-family:sans-serif; 
+            }
+            /*CONTENEDOR*/
+            #contenedor{
+                background: #2C3E50;
+                width: 100%;
+                padding-top: 94px;
+                /*COLOR HOVER CABECERA #46c9b0*/
+            }
+            a{
+                text-decoration: none;
+            }
+            /*CABECERA*/
+            header{
+                position: fixed;
+                background: #17212b; 
+                height: 94px;
+                width: 100%;
+                top: 0;
+                box-shadow: 0px 0px 20px 0px black;
+            }
+            #cabecera-contenedor{
+                position: relative;               
+                height: 100%;
+                margin-left: 100px;
+            }
+            #container-logo{
+                height: 100%;
+                display: inline-block;
+            }
+            header #logo{
+                height: 70%;
+                float: left;
+                position: absolute;
+                top: 12%;
+            }
+            header ul, header #sesion{
+                display: flex;
+                /*display: inline-block;*/
+            }
+            #menuNavegacion{
+                display: inline-block;
+                position: absolute;
+                top: 30%;
+                margin-left: 10%;
+                /*width: 100%;*/
+
+            }
+            #menuNavegacion ul{
+                display: flex;
+                font-size: 0.8em;
+            }
+            #menuNavegacion a{
+                color: white;
+            }
+            #menuNavegacion ul li{
+                /*display: inline-block;*/
+                list-style: none;
+                margin-right: 20px;
+                padding: 10px 14px;
+                font-weight: bold;
+
+            }
+            #menuNavegacion li:hover{
+                background: #46c9b0;
+                color: white;
+                border-radius: 10px;
+                box-shadow: 4px 1px 20px 0px black;
+            }
+            #sesion{
+                margin-left: 400px;
+                color: white;
+                align-items: center;
+                gap: 30px;
+            }
+            #datosUser img{
+                height: 20px;
+                width: auto;
+                float: left;
+                margin-right: 4%;
+            }
+            #BtnCerrarSesion{
+                background: transparent;
+                border: none;
+                color: white;
+            }
+            #BtnCerrarSesion:hover{
+                color: #46c9b0;
+                border-bottom: 2px solid #46c9b0;
+                cursor: pointer;
+            }
+
+            /*CONTENEDOR CENTRAL*/
+            #contenedor-central{
+                padding-top: 5%;
+            }
+            /*Página inicial*/
+            #paginaInicio{
+                display: table;
+                margin: 0 auto;
+                text-align: center;
+            }
+            #paginaInicio h2{
+                font-family: cursive;
+                font-size: 5em;
+                border-bottom: 5px solid #46c9b0;
+                margin-bottom: 5%;
+            }
+            #paginaInicio img{
+                height: 200px;
+            }
+            #BtnJugar{
+                font-size: 2.5em;
+                background: #46c9b0;
+                padding: 2%;
+                border-radius: 20px;
+                margin-top: 3%;
+            }
+            #BtnJugar a{
+                color: black;
+            }
+            #BtnJugar:hover{
+                background: #359381;
+            }
+            #BtnJugar a:hover{
+                color: white;
+            }
+            /*Reglas del juego*/
+            #reglasJuego-container{
+                display: table;
+                width: 70%;
+                color: white;
+                margin: 0 auto;
+                padding-top: 2%;
+                margin-top: 2%;
+                border-top: 3px solid #46c9b0;
+            }
+            #titulo-Reglas, #titulo-comoJugar{
+                text-align: center;
+                margin-bottom: 3%;
+            }
+            #reglasJuego-container h2{
+                display: inline-block;
+                font-size: 2em;
+                font-family: cursive;
+                font-style: oblique;
+                border-bottom: 3px solid #46c9b0;
+            }
+            #reglasJuego-container p{
+                margin-bottom: 3%;
+            }
+
+            /*PIE*/
+            footer{
+                background: #17212b;
+                /*display: flex;*/
+                color: white;
+                overflow: hidden;
+               /* justify-content: center;*/
+            }
+            footer li{
+                list-style: none;
+                margin-bottom: 8px;
+            }
+            footer a{
+                color: white;
+            }
+            #info img{
+                height: 20px;
+                background: white;
+                border-radius: 50%;
+                padding: 1%;
+                margin-right: 2%;
+            }
+            #RRSS img:hover{
+                background: #46c9b0;
+            }
+
+            footer h5{
+                display: inline-block;
+                margin-bottom: 5%;
+                border-bottom: 2px solid #46c9b0
+            }
+            /*INFO*/
+            #info{
+                display: flex;
+                justify-content: center;
+            }
+            /*RRSS*/
+            #RRSS, #contacto-container{
+                margin: 2% 0%;
+                display: inline-block;
+                width: 28%;
+            }
+            #contacto-container img{
+                background: none;
+                border-radius: 0px;
+                padding: 0%;
+            }
+            /*Copyright*/
+            #contenedor-copyright{
+                background: black;
+                width: 100%;
+                font-size: small;
+                padding: 5px;
+                text-align: center;
+            }
+            #contenedor-copyright p{
+                display: inline-block;
+            }
+            #contenedor-copyright img{
+                height: 15px;
+                margin-right: 3px;
+            }
+

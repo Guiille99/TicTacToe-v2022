@@ -1,0 +1,6 @@
+POSICIÓN	USUARIO		PARTIDAS JUGADAS	VICTORIAS
+1		Guille99_	42			28
+2		Pepe98		27			14
+3		AnaC		10			8
+4		Antonio98	20			8
+5		CarlosF		2			1

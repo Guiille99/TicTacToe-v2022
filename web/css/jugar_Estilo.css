@@ -1,0 +1,184 @@
+/* 
+    Created on : 15 may. 2022, 11:58:53
+    Author     : Guillermo Jarana
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif; 
+}
+/*CONTENEDOR*/
+#contenedor{
+    background: #2C3E50;
+    width: 100%;
+    padding-top: 94px;
+    padding-bottom: 5%;
+    /*COLOR HOVER CABECERA #46c9b0*/
+}
+a{
+    text-decoration: none;
+}
+/*CABECERA*/
+header{
+    position: fixed;
+    background: #17212b; 
+    height: 94px;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 0px 20px 0px black;
+    z-index: 999;
+}
+#cabecera-contenedor{
+    position: relative;               
+    height: 100%;
+    margin-left: 100px;
+}
+#container-logo{
+    height: 100%;
+    display: inline-block;
+}
+header #logo{
+    height: 70%;
+    float: left;
+    position: absolute;
+    top: 12%;
+}
+header ul, header #sesion{
+    display: flex;
+    /*display: inline-block;*/
+}
+#menuNavegacion{
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    margin-left: 10%;
+    /*width: 100%;*/
+
+}
+#menuNavegacion ul{
+    display: flex;
+    font-size: 0.8em;
+}
+#menuNavegacion a{
+    color: white;
+}
+#menuNavegacion ul li{
+    /*display: inline-block;*/
+    list-style: none;
+    margin-right: 20px;
+    padding: 10px 14px;
+    font-weight: bold;
+
+}
+#menuNavegacion li:hover{
+    background: #46c9b0;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 4px 1px 20px 0px black;
+}
+#sesion{
+    margin-left: 400px;
+    color: white;
+    align-items: center;
+    gap: 30px;
+}
+#datosUser img{
+    height: 20px;
+    width: auto;
+    float: left;
+    margin-right: 4%;
+}
+#BtnCerrarSesion{
+    background: transparent;
+    border: none;
+    color: white;
+}
+#BtnCerrarSesion:hover{
+    color: #46c9b0;
+    border-bottom: 2px solid #46c9b0;
+    cursor: pointer;
+}
+/*#cierraSesion a:hover{
+    content:" ";
+    display:block;
+    width:0;
+    height:2px;
+    background:orange;
+    transition:width 300ms;
+}
+#cierraSesion a:hover::after {
+    width:100%;
+}*/
+
+/*TEXTO DEL RESULTADO*/
+#text-Resultado{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3%;
+    height: 20px;
+    position: relative;
+}
+
+#txt-Victoria,#txt-Empate,#txt-Derrota{
+    position: absolute;
+    top: 0;
+}
+#txt-Victoria p,#txt-Empate p,#txt-Derrota p{
+    border-bottom: 3px solid #46c9b0;
+    font-size: 1.5em;
+    color: white;
+}
+#txt-Victoria{
+    visibility: hidden;
+}
+#txt-Derrota{
+    visibility: hidden;
+}
+#txt-Empate{
+    visibility: hidden;
+}
+
+#contenedor-centralJuego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*TABLERO*/
+#tablero{
+    display: flex;  
+    width: 750px;
+    max-width: 100%;
+   /*margin: 0 auto;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+}
+#tablero button{
+    width: 200px;
+    height: 200px;
+    max-width: 33.33%;
+    font-size: 10em;
+}
+
+/*BOTONES DE REINICIAR Y ACTUALIZAR PUNTOS*/
+#BtnReset input,#BtnActualizarPuntos{
+    background: #46c9b0;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px
+}
+#BtnReset input:hover, #BtnActualizarPuntos:hover{
+    background: #359381;
+    color: white;
+    cursor: pointer;
+}
+#BtnActualizarPuntos{
+    float: left;
+}
+#BtnReset{
+    margin-bottom: 5%;
+}
